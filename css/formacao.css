@@ -1,0 +1,185 @@
+.formacao {
+  background-color: #121212;
+  color: #8f8f8f;
+}
+
+.formacao-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 8rem 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 8.125rem;
+}
+
+.formacao-container .subtitulo {
+  font-size: 7.75rem;
+  color: #000;
+}
+
+.form-texto {
+  margin-bottom: 3.75rem;
+  padding-left: 0.625rem;
+  border-left: 4px solid;
+  border-image: linear-gradient(180deg, #4bbaea 0%, #3da9e6 100%) 1 100%;
+}
+
+.form-texto strong {
+  color: #fff;
+}
+
+.form-lista {
+  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3.75rem;
+  padding-left: 0.625rem;
+}
+
+.form-lista li {
+  flex: 1;
+  background-color: #050505;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 1.25rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-lista li span:first-child {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 0.625rem;
+}
+
+.form-lista li h3 {
+  flex: 1;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.form-lista li h3,
+.form-lista li span:last-child {
+  font-size: 1.125rem;
+  line-height: 1.16;
+}
+
+.form-lista li h3::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background-image: linear-gradient(180deg, #4bbaea 0%, #3da9e6 100%);
+  position: absolute;
+  top: 3.1875rem;
+  left: -0.4rem;
+}
+
+.form-extra {
+  padding-left: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+
+.cursos h3,
+.idiomas h3 {
+  font-family: "Crimson Text", serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.cursos h3::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 21px;
+  background-image: url("../Images/formIconeLivro.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: -2rem;
+}
+
+.cursos ul,
+.idiomas ul {
+  font-weight: 700;
+  color: #c4c4c4;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cursos li:first-child,
+.idiomas li:first-child {
+  margin-bottom: 1.25rem;
+}
+
+.idiomas h3::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 21px;
+  background-image: url("../Images/formIconeLing.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: -2rem;
+}
+
+.idiomas li {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .formacao {
+    padding: 0 2rem 8rem;
+  }
+
+  .formacao-container .subtitulo {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 915px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .form-extra {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 710px) {
+  .formacao-container .subtitulo {
+    font-size: 4rem;
+    color: #fafafa;
+    text-transform: capitalize;
+  }
+
+  .form-texto {
+    font-size: 1.25rem;
+  }
+
+  .form-lista {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 300px) {
+  .formacao {
+    padding: 0 1rem 8rem;
+  }
+
+  .cursos li {
+    flex-direction: column;
+    gap: 0.3125rem;
+  }
+}
