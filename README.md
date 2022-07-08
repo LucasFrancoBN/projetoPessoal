@@ -28,7 +28,7 @@
     <h2> 📝 Sobre o Projeto </h2> 
     <p> Página feita para mim, onde eu falo um pouco sobre mim e sobre os meus principais projetos já realizados até o momento atual. É possível fazer o download do meu Currículo através do site </p>
  
- <h3 align="center">Link do Projeto <a href="https://lucasfrancobn.github.io/Bikecraft/">CLIQUE AQUI</a></h3>
+ <h3 align="center">Link do Projeto <a href="https://lucasfrancobn.github.io/projetoPessoal/">CLIQUE AQUI</a></h3>
 
 </div>
 <br>
